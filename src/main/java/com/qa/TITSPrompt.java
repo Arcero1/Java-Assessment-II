@@ -1,6 +1,6 @@
 package com.qa;
 
-public class TITSPrompt {
+class TITSPrompt {
     void welcome() {
         System.out.println("You wake up in a gray swamp");
         System.out.println("There are no distinguishing features, you are very lost");
@@ -18,12 +18,16 @@ public class TITSPrompt {
         System.out.println("Would you like to play again?");
     }
 
-    void incorrect() {
+    void incorrectDirectionInput() {
         System.out.println("That direction leads nowhere!");
         System.out.println("Try moving 'north', 'south', 'east' or 'west'");
     }
 
-    void mapSize() {
-        System.out.println("enter map size");
+    void mapWidth() {
+        System.out.print("Enter map width : ");
+    }
+
+    void mapHeight() {
+        System.out.print("Enter map height : ");
     }
 }
